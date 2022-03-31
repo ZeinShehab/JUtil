@@ -15,12 +15,7 @@ public final class JIterable {
      * @return empty Iterable
      */
     public static <E> Iterable<E> emptyIterable() {
-        return new Iterable<E>() {
-            @Override
-            public Iterator<E> iterator() {
-                return JIterator.<E>emptyIterator();
-            }
-        };
+        return () -> JIterator.emptyIterator();
     }
 
     /**

@@ -2,7 +2,7 @@ package jutil;
 
 import static java.lang.Math.log;
 
-public class JMath {
+public final class JMath {
     private JMath() {
     }
 

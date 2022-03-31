@@ -3,7 +3,7 @@ package jutil;
 import java.lang.reflect.Array;
 import java.util.Objects;
 
-public class JArrays {
+public final class JArrays {
     private JArrays() {};
 
     /**

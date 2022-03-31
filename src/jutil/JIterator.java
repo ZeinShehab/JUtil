@@ -189,14 +189,7 @@ public final class JIterator {
         if (iterator == null) {
             return JIterable.<T>emptyIterable();
         }
-        return new Iterable<T>() {
-
-            @Override
-            public Iterator<T> iterator() {
-                return iterator;
-            }
-
-        };
+        return () -> iterator;
     }
 
     /**

@@ -3,7 +3,9 @@ package jutil;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-public class JFunction {
+public final class JFunction {
+    private JFunction() {
+    }
 
     /**
      * Creates a partial function of {@code biFunction}
