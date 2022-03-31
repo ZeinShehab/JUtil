@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Utility class for files
+ */
 public final class JFiles {
     private static Scanner fileReader;
     private static PrintWriter fileWriter;

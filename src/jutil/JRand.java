@@ -11,33 +11,33 @@ public final class JRand {
     }
 
     /**
-     * Generates a random integer between {@code a} & {@code b}
+     * Generates a random integer between {@code a} and {@code b}
      * both inclusive
      * 
      * @param a a value
      * @param b a value
-     * @return random number between a & b (inclusive)
+     * @return random number between a and b (inclusive)
      */
     public static int randInt(int a, int b) {
         return rand.nextInt(b - a + 1) + a;
     }
 
     /**
-     * Generates a uniform random number between a & b both inclusive
+     * Generates a uniform random number between a and b both inclusive
      * 
      * @param a a value
      * @param b a value
-     * @return uniform random number between a & b (inclusive)
+     * @return uniform random number between a and b (inclusive)
      */
     public static double uniform(double a, double b) {
         return (b - a) * random() + a;
     }
 
     /**
-     * Generates a uniform random number between {@code 0} (inclusive) & {@code 1}
+     * Generates a uniform random number between {@code 0} (inclusive) and {@code 1}
      * (exclusive)
      * 
-     * @return uniform random number between 0 & 1
+     * @return uniform random number between 0 and 1
      */
     public static double random() {
         return rand.nextDouble();

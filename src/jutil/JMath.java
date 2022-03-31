@@ -2,6 +2,9 @@ package jutil;
 
 import static java.lang.Math.log;
 
+/**
+ * Utility class for mathematical operations
+ */
 public final class JMath {
     private JMath() {
     }

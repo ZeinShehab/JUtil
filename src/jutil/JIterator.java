@@ -6,6 +6,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Utility class for iterators
+ */
 public final class JIterator {
     private JIterator() {
     }

@@ -3,6 +3,9 @@ package jutil;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
+/**
+ * Utility class for functions
+ */
 public final class JFunction {
     private JFunction() {
     }

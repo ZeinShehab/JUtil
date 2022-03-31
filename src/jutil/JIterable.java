@@ -4,6 +4,9 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Utility class for iterable types
+ */
 public final class JIterable {
     private JIterable() {
     }
@@ -60,8 +63,6 @@ public final class JIterable {
         }
         return JIterator.get(emptyIteratorIfNull(iterable), index);
     }
-
-    // TODO: getAll multiple indices
 
     /**
      * Returns the first item in the iterable.
