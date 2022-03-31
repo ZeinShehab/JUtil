@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Utility class for random numbers 
+ */
 public final class JRand {
     private static final Random rand = new Random();
 
