@@ -6,7 +6,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-public class JIterator {
+public final class JIterator {
+    private JIterator() {}
+    
     /**
      * Returns an empty iterator over no elements
      * 
