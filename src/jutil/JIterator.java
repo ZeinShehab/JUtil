@@ -7,8 +7,9 @@ import java.util.List;
 import java.util.Objects;
 
 public final class JIterator {
-    private JIterator() {}
-    
+    private JIterator() {
+    }
+
     /**
      * Returns an empty iterator over no elements
      * 
@@ -180,7 +181,7 @@ public final class JIterator {
     /**
      * Returns a single use wrapper Iterable of the iterator. Null safe.
      * 
-     * @param <T> the item type
+     * @param <T>      the item type
      * @param iterator the iterator to wrap. can be null.
      * @return single use wrapper Iterable of {@code iterator}
      */
@@ -194,7 +195,7 @@ public final class JIterator {
             public Iterator<T> iterator() {
                 return iterator;
             }
-            
+
         };
     }
 

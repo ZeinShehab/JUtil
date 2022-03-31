@@ -5,11 +5,12 @@ import java.util.Iterator;
 import java.util.List;
 
 public final class JIterable {
-    private JIterable() {}
+    private JIterable() {
+    }
 
     /**
      * Returns an empty iterable of no elements
-
+     * 
      * @param <E> type of items
      * @return empty Iterable
      */
@@ -21,7 +22,7 @@ public final class JIterable {
             }
         };
     }
-    
+
     /**
      * Returns the number of items contained in the Iterable. Null safe.
      * 
@@ -34,13 +35,14 @@ public final class JIterable {
 
         if (iterable instanceof Collection<?>)
             return ((Collection<?>) iterable).size();
-        
+
         return JIterator.size(emptyIteratorIfNull(iterable));
     }
 
     /**
      * Returns a list of the items in the Iterable. Null safe.
-     * @param <T> the item type
+     * 
+     * @param <T>      the item type
      * @param iterable the iterable. can be null.
      * @return a list of items in the Iterable
      */
@@ -50,10 +52,10 @@ public final class JIterable {
 
     /**
      * Returns the item at {@code index} in the Iterable.
-     *  
-     * @param <T> the item type
+     * 
+     * @param <T>      the item type
      * @param iterable the iterable
-     * @param index the index to get
+     * @param index    the index to get
      * @return item at {@code index} in the iterable
      * @throws IndexOutOfBoundsException if the index is invalid
      */
@@ -69,7 +71,7 @@ public final class JIterable {
     /**
      * Returns the first item in the iterable.
      * 
-     * @param <T> the item type
+     * @param <T>      the item type
      * @param iterable the iterable
      * @return the first item
      * @throws IndexOutOfBoundsException if there is no first item
@@ -80,7 +82,7 @@ public final class JIterable {
 
     /**
      * Checks if the iterable is empty
-     * <p> 
+     * <p>
      * A {@code null} Iterable returns true
      * 
      * @param iterable the iterable to check
@@ -94,10 +96,10 @@ public final class JIterable {
     }
 
     /**
-     * Returns a empty Iterable if {@code iterable} is null 
+     * Returns a empty Iterable if {@code iterable} is null
      * and {@code iterable} otherwise. Null safe.
      * 
-     * @param <E> the item type
+     * @param <E>      the item type
      * @param iterable the iterable. cam be null.
      * @return an empty iterable if {@code iterable} is null
      */
@@ -109,7 +111,7 @@ public final class JIterable {
      * Returns an empty Iterator if {@code iterable} is null
      * and {@code iterable.iterator()} otherwise. Null safe.
      * 
-     * @param <E> the item type
+     * @param <E>      the item type
      * @param iterable the iterable. can be null
      * @return an empty Iterator if {@code iterable} is null
      */
@@ -121,10 +123,11 @@ public final class JIterable {
      * Returns a string representation of the iterable.
      * <p>
      * The string represenation consists of the items of the iterable
-     * enclosed between square brackets {@code []} and seperated by a comma and space
+     * enclosed between square brackets {@code []} and seperated by a comma and
+     * space
      * {@code ", "}.
      * 
-     * @param <T> the item type
+     * @param <T>      the item type
      * @param iterable the iterable
      * @return string representation of {@code iterable}
      */

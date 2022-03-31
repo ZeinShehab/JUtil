@@ -170,7 +170,7 @@ public class JMath {
      * Returns the minimum value of the elements {@code a}
      * 
      * @param <T> the item type
-     * @param a the elements
+     * @param a   the elements
      * @return the minimum of {@code a}
      */
     @SafeVarargs
@@ -190,7 +190,7 @@ public class JMath {
      * Returns the maximum value of the elements {@code a}
      * 
      * @param <T> the item type
-     * @param a the elements
+     * @param a   the elements
      * @return the maximum of {@code a}
      */
     @SafeVarargs
